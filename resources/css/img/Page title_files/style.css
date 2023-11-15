@@ -1,0 +1,330 @@
+/* ----------------------------------- */
+/* -----------Default setup----------- */
+/* ----------------------------------- */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    /* mặc định 20px */
+    color: #5a5a5a;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;
+    /* hiển thị chữ tốt nhất */
+}
+
+/* --------------------------------------- */
+/* ------------Reusable component--------- */
+/* --------------------------------------- */
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #e67e22;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin: 0 8px;
+    width: 190px;
+    display: inline-block;
+    text-align: center;
+    transition: all .3s;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #d35400;
+    color: red;
+}
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 40px auto;
+    
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 300%;
+    font-weight: 400;
+    word-spacing: 5px;
+    color: white;
+    line-height: 135%;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+h2{
+    color: #e67e22;
+    font-size: 180%;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #eeb889;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+
+h3{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #e4be43;
+    color: white;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding-bottom: 15px;
+}
+
+.p-long{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 70%;
+    margin-left: 15%;
+    line-height: 140%;
+}
+
+section{
+    padding: 30px;
+}
+
+.small-icon{
+    color: #ecbf43;
+    font-size: 130%;
+    margin-right: 10px;
+}
+
+/*  --------------------------------------*/
+/* -----------------HEADER---------------- */
+/* --------------------------------------- */
+
+header {
+    background-image: linear-gradient(45deg, rgba(230, 126, 34, 0.8), rgba(149, 165, 166, 0.8)), url("./img/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    /* View heigh */
+    background-attachment: fixed;
+}
+
+.logo {
+    width: 300px;
+    float: left;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.main-nav li a:hover {
+    border-bottom: 4px solid red;
+    color: red;
+}
+
+.main-nav li a:active,
+
+.heading-main-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -55%);
+    width: 1140px;
+}
+
+/* -------------------------------- */
+/* --------About Section----------- */
+/* -------------------------------- */
+
+.about-section{
+    margin-bottom: 260px;
+}
+
+.about-picture{
+    position: relative;
+    margin-top: 50px;
+}
+
+.about-picture img{
+    width: 90%;
+    height: 250px;
+    border-radius: 20px;
+    border: 4px solid #eeb889;
+    box-shadow: 0px 5px 15px 5px #eeb889;
+    /* x - y - độ mờ - độ phóng rộng màu */
+    transition: all 0.7s;
+    /* filter: brightness(55%), blur(2px); */
+}
+
+.picture-title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(233, 15, 15);
+    transform: translate(-55%, 100%);
+    opacity: 0;
+    transition: all 0.7s;
+}
+
+.about-picture:hover img,
+.about-picture:active img{
+    filter: brightness(55%), blur(2px);
+}
+
+.about-picture:hover .picture-title,
+.about-picture:active .picture-title{
+    transform: translate(-55%, -50%);
+    opacity: 1;
+}
+
+/* -------------------------------------- */
+/* -----------PRODUCT-SECTION------------ */
+/* -------------------------------------- */
+
+.products-section{
+    background-color: #f4f4f4;
+}
+
+.products-section h2{
+    margin-bottom: 60px;
+}
+
+.products-box{
+    background-color: #eeefff;
+    box-shadow: 3px 5px 10px #e0e0e0;
+    width: 90%;
+    height: 350px;
+}
+
+.products-price{
+    color: #265077;
+    font-size: 250%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.products-price span{
+    font-size: 80%;
+}
+
+.products-box ul li{
+    margin-left: 10%;
+    list-style: none;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.products-box .btn{
+    margin-left: 20%;
+}
+
+/* --------------------------------------- */
+/* ---------Testimonials section---------- */
+/* --------------------------------------- */
+
+.testimonials-section{
+    background-image: linear-gradient(45deg, rgba(230, 126, 34, 0.8), rgba(149, 165, 166, 0.8)), url("./img/background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.testimonials-section h2{
+    margin-bottom: 70px;
+}
+
+blockquote{
+    width: 95%;
+    position: relative;
+    font-style: italic;
+    line-height: 140%;
+    color: rgb(0, 0, 0);
+}
+
+blockquote::before{
+    content:"\201C";
+    display: block;
+    font-size: 400%;
+    position: absolute;
+    top:-10px;
+    left: -10px;
+}
+
+cite{
+    display: block;
+    color: #fb8702;
+    margin-top: 25px;
+}
+
+cite img{
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #265077;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* ------------------------------------ */
+/* -------SPONSOR SECTION-------------- */
+/* ------------------------------------ */
+
+.sponsors-section{
+    background-color: #e0e0e0;
+}
+
+.sponsors-section h2{
+    margin-bottom: 50px;
+}
+
+.sponsors-showcase{
+
+}
+
+.sponsors-showcase li{
+    list-style: none;
+    float: left;
+
+} 
+
+.logo-sponsor{
+    width: 140px;
+    height: 100px;
+}

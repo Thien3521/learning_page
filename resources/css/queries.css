@@ -1,0 +1,201 @@
+/* Tablet lớn từ 1024px */
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .heading-main-box {
+        transform: translate(-25%, -55%);
+    }
+
+    form {
+        margin-left: 20%;
+    }
+}
+
+/* Tablet nhỏ->lớn từ 768-1023px */
+@media only screen and (max-width: 1023px) {
+    .logo {
+        margin-left: 40px;
+    }
+
+    .main-nav {
+        margin-right: 15px;
+        margin-top: 30px;
+    }
+
+    .main-nav li {
+        margin-right: 10px;
+    }
+
+    .heading-main-box {
+        transform: translate(-30%, -55%);
+    }
+
+    .products-section .btn {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .products-box {
+        width: 95%;
+    }
+
+    h3 {
+        font-size: 100%;
+    }
+
+    .social-icons li {
+        margin-left: 10px;
+    }
+
+    .information .small-icon {
+        display: block;
+    }
+
+    .information li {
+        font-size: 15px;
+    }
+}
+
+/* Small phone->tablet 481->767px */
+@media only screen and (max-width: 767px) {
+    .col {
+        width: 100%;
+    }
+
+    .main-nav {
+        visibility: hidden;
+    }
+
+    .logo {
+        width: 350px;
+        margin-left: 10%;
+    }
+
+    h1 {
+        word-spacing: 2px;
+        font-size: 250%;
+    }
+
+    .heading-main-box {
+        transform: translate(-15%, -55%);
+    }
+
+    .heading-main-box .btn {
+        width: 15%;
+    }
+
+    .about-section img {
+        width: 70%;
+        height: 210px
+    }
+
+    .about-section {
+        height: 100vh;
+    }
+
+    .about-section .row .p-long {
+        font-size: 20px;
+    }
+
+    .about-picture {
+        text-align: center;
+    }
+
+    .about-picture img {
+        width: 70%;
+    }
+
+    .picture-title {
+        font-size: 25px;
+    }
+
+    .products-section {
+        height: 1325px;
+    }
+
+    .products-box {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .products-box ul li {
+        margin-left: 15%;
+    }
+
+    .testimonials-section {
+        height: 1000px;
+    }
+
+    .testimonials-section .row .col {
+        margin-bottom: 50px;
+    }
+
+    .logo-sponsor {
+        width: 110px;
+    }
+
+    figcaption {
+        visibility: hidden;
+    }
+
+    form {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    label {
+        margin-left: 35%;
+    }
+
+    .information {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .information li {
+        font-size: 20px;
+    }
+
+    .social-icons {
+        text-align: center;
+    }
+
+    .social-icons li {
+        font-size: 300%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        height: 950px;
+    }
+
+}
+
+/* Small phone nhỏ hơn 480px */
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 200%;
+    }
+
+    .logo {
+        width: 200px;
+        margin-top: 40%;
+        margin-left: 5%;
+    }
+
+    .heading-main-box {
+        transform: translate(-12%, -55%);
+    }
+
+    .heading-main-box .btn {
+        display: block;
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+}
